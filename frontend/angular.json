@@ -17,13 +17,19 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-	    "outputPath": "dist/techRepair",	  
+            "outputPath": "dist/techRepair/browser",
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/assets"],
-            "styles": ["src/styles.scss"]
+            "assets": [
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ]
           },
           "configurations": {
             "production": {
@@ -69,17 +75,20 @@
           "options": {
             "outputPath": "dist/techRepair",
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/assets"],
-            "styles": ["src/styles.scss"]
+            "assets": [
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ]
           }
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "aed51555-e822-4b37-a14e-a99fbfb799ce"
   }
 }
