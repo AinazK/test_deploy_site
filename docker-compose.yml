@@ -4,7 +4,7 @@ networks:
 services:
   nginx:
     image: nginx:stable-alpine
-    ports: -"80:80"
+    ports: - "80:80"
     volumes:
       - "./nginx.conf:/etc/nginx/nginx.conf"
     depends_on:
