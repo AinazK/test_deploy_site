@@ -7,6 +7,13 @@ from api import main_blueprint
 
 config = Settings()
 
+config.USER = "postgres"
+config.PASSWORD = "123"
+config.HOST_NAME = "localhost"
+config.PORT_NAME = "5432"
+config.DB_NAME = "remont"
+
+
 app = Flask(__name__)
 
 # Конфигурация
