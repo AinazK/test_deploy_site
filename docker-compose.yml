@@ -1,7 +1,28 @@
 services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: remont
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+    ports:
+      - "5432:5432"
+    networks:
+      - dev
+
   backend:
     build:
       context: ./backend
+    environment:
+      DB_NAME: remont
+      USER: postgres
+      PASSWORD: 123
+      PORT_NAME: "5432"
+      HOST_NAME: db
+      SECRET_KEY: hHF83lkHKJF373GHJjsgho47y
+    depends_on:
+      - db
     networks:
       - dev
 
